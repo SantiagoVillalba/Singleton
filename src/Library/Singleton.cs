@@ -1,16 +1,8 @@
-﻿using System;
-
 namespace Library
 {
-    public class Greeter : Singleton<Greeter>
+    public interface Singleton<T> where T : Greeter
     {
-        /* private Greeter()
-        {
-            // Intentionally left blank
-        }
-
         private static Greeter instance;
-
         public static Greeter Instance
         {
             get
@@ -22,11 +14,10 @@ namespace Library
 
                 return instance;
             }
-        }  */
-
-        public void SayHiToTheWorld()
-        {
-            Console.WriteLine("Hello World!");
         }
+        
+        
+        
+         
     }
 }
